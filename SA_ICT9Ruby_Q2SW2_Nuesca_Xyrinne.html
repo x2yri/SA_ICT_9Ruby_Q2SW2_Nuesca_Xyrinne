@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+    }
+
+    .topnav {
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .topnav img {
+      height: 90px;
+    }
+
+    .topnav input {
+      margin-left: auto;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      outline: none;
+    }
+
+    .topnav input:focus {
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .card {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #024A85;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    table {
+      width: 90%; 
+      margin: 0 auto;
+      border-collapse: collapse;
+      color: #024A85;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      font-weight: 600;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 18px;
+    }
+
+    label {
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: #024A85;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: #f2f2f2;
+      font-size: 14px;
+      outline: none;
+      line-height: 1.4;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;  
+      min-height: 100px; 
+    }
+
+    input:focus, textarea:focus {
+      background: #ffffff;
+      box-shadow: 0 0 0 2px rgba(2,74,133,0.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #024A85;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #013b6b;
+    }
+
+    footer {
+      background: #024A85;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 500px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .topnav img {
+        height: 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <img src="obblogo.webp" alt="OBMC Logo">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <div class="card">
+    <h2>Office Hours</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Department</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>8:00 AM – 4:00 PM</td>
+        <td>Registrar</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>8:00 AM – 4:00 PM</td>
+        <td>Accounting</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>8:00 AM – 4:00 PM</td>
+        <td>Guidance</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>8:00 AM – 4:00 PM</td>
+        <td>Principal</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>8:00 AM – 3:00 PM</td>
+        <td>Admin</td>
+      </tr>
+    </table>
+  </div>
+
+  <form class="card">
+    <h2>Contact Us</h2>
+
+    <div class="row">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" required>
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Email</label>
+        <input type="email" required>
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <input type="tel">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Message</label>
+      <textarea rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
